@@ -1,4 +1,3 @@
-# gmail-drive-word-api
 # Java API Integration
 
 ## Overview
