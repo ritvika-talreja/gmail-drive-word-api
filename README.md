@@ -32,7 +32,3 @@ This repository contains Java projects that integrate with various APIs and libr
 - For **Gmail API**: Run `Gmailer.java` to send emails and list labels.
 - For **Google Drive API**: Run `DriveQuickstart.java` to interact with Google Drive.
 - For **Apache POI**: Run `WordData.java` to modify Word documents.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
