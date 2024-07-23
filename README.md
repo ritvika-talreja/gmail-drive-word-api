@@ -6,29 +6,43 @@ This repository contains Java projects that integrate with various APIs and libr
 - **Google Drive API**: Code for uploading and downloading files from Google Drive.
 - **Apache POI**: Code for reading, updating, and deleting rows in Word documents.
 
-## Files
-1. **Gmail.java**: Demonstrates how to use the Gmail API for sending emails and listing labels.
-2. **Word.java**: Demonstrates how to read, add, update, and delete rows in Word documents using Apache POI.
-3. **DriveQuickstart.java**: Demonstrates how to use the Google Drive API for viewing, uploading, and downloading files.
-
 ## Prerequisites
 - Java Development Kit (JDK) 8 or later.
 - Apache POI library for Word document manipulation.
 - Google API client libraries for Gmail and Google Drive.
 
 ## Setup
-1. **Gmail API:**
-   - Place your `credentials.json` in the `resources` folder.
-   - Ensure you have the appropriate scopes and authentication setup.
 
-2. **Google Drive API:**
-   - Place your `credentials.json` in the appropriate location.
-   - Ensure you have the required scopes and authentication setup.
+### Download json file from Google Cloud Console
+1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
+2. Create a new project or select an existing project.
+3. Enable the Gmail API and Google Drive API for your project.
+4. Navigate to the **Credentials** page.
+5. Click on **Create Credentials** and select **OAuth 2.0 Client IDs**.
+6. Configure the OAuth consent screen if prompted.
+7. Set the application type to **Desktop app**.
+8. After configuring, click **Create**.
+9. Download the 'json` file and save it to the `resources` folder of your project.
 
-3. **Apache POI:**
-   - Add Apache POI dependency to your project.
+### Gmail API
+1. Place your `credentials.json` in the `resources` folder.
+2. Ensure you have the appropriate scopes and authentication setup.
+
+### Google Drive API
+1. Place your `credentials.json` in the appropriate location.
+2. Ensure you have the required scopes and authentication setup.
+
+### Apache POI
+1. Add Apache POI dependency to your project. You can add it to your `pom.xml` if you are using Maven:
+    ```xml
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.0.0</version>
+    </dependency>
+    ```
 
 ## Usage
-- For **Gmail API**: Run `Gmailer.java` to send emails and list labels.
-- For **Google Drive API**: Run `DriveQuickstart.java` to interact with Google Drive.
-- For **Apache POI**: Run `WordData.java` to modify Word documents.
+1. **Gmail.java**: Run this file to send emails or list labels using the Gmail API.
+2. **Word.java**: Run this file to perform operations on Word documents using Apache POI.
+3. **DriveQuickstart.java**: Run this file to upload and download files from Google Drive using the Google Drive API.
